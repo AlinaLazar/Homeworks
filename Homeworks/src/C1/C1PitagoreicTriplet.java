@@ -1,3 +1,5 @@
+package C1;
+
 import java.util.Scanner;
 public class C1PitagoreicTriplet {
     public static final Scanner sc = new Scanner(System.in);

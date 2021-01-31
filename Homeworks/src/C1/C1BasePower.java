@@ -1,3 +1,5 @@
+package C1;
+
 import java.util.Scanner;
 public class C1BasePower {
 

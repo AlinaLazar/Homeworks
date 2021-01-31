@@ -1,3 +1,5 @@
+package C2;
+
 public class C2MathPowerRecursive {
 
     public static int mathPower(int x, int y){

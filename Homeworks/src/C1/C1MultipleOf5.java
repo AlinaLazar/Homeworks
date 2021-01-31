@@ -1,3 +1,5 @@
+package C1;
+
 public class C1MultipleOf5 {
         public static int getMultipleOf5Lower(int number) { // returneaza cel mai mare multiplu de 5, mai mic sau egal cu n
             return number - number % 5;

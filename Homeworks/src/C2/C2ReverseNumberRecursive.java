@@ -1,3 +1,4 @@
+package C2;
 
 public class C2ReverseNumberRecursive {
     public static int reverseNumber (int number) {

@@ -1,3 +1,5 @@
+package C2;
+
 public class C2BubbleSort {
     public static void main(String[] args) {
         double [] array = {3.2, -1.0, 0.7, 5.9, 2.1};

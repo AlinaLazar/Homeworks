@@ -1,3 +1,5 @@
+package C3;
+
 import java.util.Arrays;
 
 public class C3FilterStringTemplate {

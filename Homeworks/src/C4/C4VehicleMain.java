@@ -1,8 +1,10 @@
+package C4;
+
 public class C4VehicleMain {
 
     public static void main(String[] args) {
-        Vehicle carA = new Vehicle (2015, "1M8GDM9AXKP042788", "B90MPO");
-        Vehicle carB = new Vehicle (2018, "ABC", "CJ12CTA");
+        Vehicle carA = new Vehicle(2015, "1M8GDM9AXKP042788", "B90MPO");
+        Vehicle carB = new Vehicle(2018, "ABC", "CJ12CTA");
 
         carA.sellVehicle("BH89FOC", 2016);
 

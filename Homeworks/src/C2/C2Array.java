@@ -1,3 +1,5 @@
+package C2;
+
 public class C2Array {
     public static void main(String[] args) {
 
