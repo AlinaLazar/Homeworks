@@ -25,5 +25,6 @@ public class Main {
         airplane.addFuel(45.67);
         airplane.printInfo();
         airplane2.printInfo();
+        
     }
 }
