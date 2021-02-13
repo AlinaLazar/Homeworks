@@ -1,34 +1,33 @@
-package C10;
+package C10SuperClasa;
 
-public class Triangle extends Shape{
-    private int base;
+public class Rectangle extends Shape {
+    private int width;
     private int height;
 
-    public Triangle(int base, int height){
-        this.base = base;
+    public Rectangle(int width, int height){
+        this.width = width;
         this.height = height;
     }
 
-    public Triangle(String text, String material, int base, int height){
+    public Rectangle(String text, String material , int width, int height){
         super(text, material);
-        this.base = base;
+        this.width = width;
         this.height = height;
     }
 
-    public void displayTriangleHeight(){
-        System.out.println("Triangle height is: " + this.height);
+    public void displayRectangleHeight(){
+        System.out.println("Rectangle height is: " + this.height);
     }
-
 
     @Override
     public int getSize(){
-        int aria = (this.base * this.height) / 2;
+        int aria = this.width * this.height;
         return aria;
     }
 
     @Override
     public String toString(){
-        return "Triangle: height is " + this.height + ", base is: " + this.base + ", " +super.toString();
+        return "Rectangle: height is: " + this.height + ", and width is: " + this.width + ", " + super.toString();
     }
 
     @Override
@@ -42,8 +41,8 @@ public class Triangle extends Shape{
         if(this.getClass() != obj.getClass()){
             return false;
         }
-        Triangle other = (Triangle) obj;
-        if(super.equals(other) && (this.height == other.height) && (this.base == other.base)){
+        Rectangle other = (Rectangle) obj;
+        if(super.equals(other) && (this.height == other.height) && (this.width == other.width)){
             return true;
         }
         return false;
@@ -53,8 +52,8 @@ public class Triangle extends Shape{
     public int hashCode(){
         final int prime = 31;
         int result = super.hashCode();
-        result = prime * result + base;
         result = prime * result + height;
+        result = prime * result + width;
         return result;
     }
 }

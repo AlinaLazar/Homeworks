@@ -1,6 +1,4 @@
-package C10;
-
-import java.util.Objects;
+package C10SuperClasa;
 
 public class Shape {
     private String text;
@@ -50,9 +48,6 @@ public class Shape {
         result = prime * result + (material == null ? 0 : material.hashCode());
         return result;
     }
-
-
-
 
 
 

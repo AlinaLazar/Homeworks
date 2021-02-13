@@ -1,4 +1,4 @@
-package C6;
+package C6Mostenire;
 
 public class Main {
     public static void main(String[] args) {

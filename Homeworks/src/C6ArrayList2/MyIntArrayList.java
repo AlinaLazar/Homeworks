@@ -1,4 +1,4 @@
-package C6;
+package C6Mostenire;
 
 import java.util.*;
 public class MyIntArrayList {

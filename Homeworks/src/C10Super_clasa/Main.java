@@ -1,4 +1,4 @@
-package C10;
+package C10SuperClasa;
 
 import java.util.ArrayList;
 
