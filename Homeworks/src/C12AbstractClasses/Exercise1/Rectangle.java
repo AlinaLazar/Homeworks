@@ -1,7 +1,5 @@
 package C12AbstractClasses.Exercise1;
 
-import C10Super_clasa.Shape;
-
 public class Rectangle extends Shape {
     private int width;
     private int height;
