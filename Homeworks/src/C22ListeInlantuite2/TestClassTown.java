@@ -22,6 +22,7 @@ public class TestClassTown {
 
 
         LinkedList<Integer> list = new LinkedList<>();
+        LinkedList<Integer> listB = new LinkedList<>();
         list.add(1);
         list.add(2);
         list.add(3);
@@ -33,10 +34,16 @@ public class TestClassTown {
         list.add(5);
         list.add(6);
         System.out.println("Lista:" + list);
-        RemoveDuplicatesLinkedList.removeDuplicates2(list);   //sterge daca sunt cate 2 , nu mai multe
+        RemoveDuplicatesLinkedList.removeDuplicates3(list);   //sterge daca sunt cate 2 , nu mai multe
         System.out.println("Lista dupa stergerea duplicatelor :" + list);
 
 //        RemoveDuplicatesLinkedList.removeAllDuplicates(list);  //daca sunt 3 noduri identice mai adaug o variabila?
 //        System.out.println("Lista dupa stergerea tuturor duplicatelor:" + list);
+
+        listB.add(1);
+        listB.add(2);
+        listB.add(7);
+        listB.add(9);
+        System.out.println("Liste mergeuire" + MergeTwoSortedListsLinkedLists.mergeTwoSortedLists(list,listB));
     }
 }

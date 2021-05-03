@@ -1,4 +1,4 @@
-package C3;
+package C3RecString;
 
 public class C3StringToNumber {
     public static int convertStringToNumber(String numberString) {        //varianta fara folosirea functiilor clasei String

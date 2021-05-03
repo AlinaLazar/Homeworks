@@ -28,17 +28,20 @@ public class IsAnagram {
     }
 
     public static void main(String[] args) {
-        String s = "anana";
-        String t = "aaann";
+//        String s = "anana";
+//        String t = "aaann";
+//
+//       // System.out.println(isAnagram(s,t));
+//
+//        boolean flag = false;
+//        if (flag = true) {
+//            System.out.println("true");
+//        }
+//        else {
+//            System.out.println("false");
+//        }
 
-       // System.out.println(isAnagram(s,t));
-
-        boolean flag = false;
-        if (flag = true) {
-            System.out.println("true");
-        }
-        else {
-            System.out.println("false");
-        }
+        int n = 3;
+        System.out.println((int)Math.pow(n,3));
     }
 }

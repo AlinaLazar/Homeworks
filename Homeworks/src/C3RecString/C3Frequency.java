@@ -1,4 +1,4 @@
-package C3;
+package C3RecString;
 
 import java.util.Scanner;
 import java.util.Arrays;

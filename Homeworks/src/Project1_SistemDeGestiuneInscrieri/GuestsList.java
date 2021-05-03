@@ -5,13 +5,13 @@ import java.util.Objects;
 
 public class GuestsList {
     private final String eventName;
-    private int maxParticipants = 4;
+    private int maxParticipants;
     //private int waitingParticipants ;
-    private ArrayList<Guest> participantsList = new ArrayList<>(maxParticipants) ;
+    private final ArrayList<Guest> participantsList = new ArrayList<>(maxParticipants) ;
 
     public GuestsList (String eventName, int maxParticipants){
-        this.eventName = "Devmind Event";
-        this.maxParticipants = 4;
+        this.eventName = eventName;
+        this.maxParticipants = maxParticipants;
     }
 
     //pct 1
@@ -19,7 +19,7 @@ public class GuestsList {
         int result = 0;
         if (searchPers(guest)){
             result = -1;
-        } else if (!searchPers(guest)) {
+        } else {
             participantsList.add(guest);
             if (participantsList.size() <= maxParticipants) {
                 System.out.println("[" + guest + "]"+ "Felicitari! Locul tau la eveniment este confirmat. Te asteptam!");
@@ -66,7 +66,7 @@ public class GuestsList {
     //pct. 2
     public void checkParticipants(Guest guest){
 
-        if( participantsList.indexOf(guest) <= maxParticipants){
+        if( participantsList.indexOf(guest) <= maxParticipants){            // de modificat
             System.out.println("Persoana este inscrisa la eveniment!");
         }else if (participantsList.indexOf(guest) > maxParticipants){
                 System.out.println("Persoana este inscrisa pe lista de asteptare");
@@ -80,7 +80,7 @@ public class GuestsList {
         boolean result = false;
 
             if (participantsList.size() > maxParticipants) {
-                if (participantsList.indexOf(guest) <= maxParticipants) {
+                if (participantsList.indexOf(guest) <= maxParticipants) { //? indexOf = -1
                     participantsList.remove(guest);
                     result = true;
                     System.out.println("[" + participantsList.get(maxParticipants - 1) + "]" + " Felicitari! Ai prins un loc liber. Te asteptam!");

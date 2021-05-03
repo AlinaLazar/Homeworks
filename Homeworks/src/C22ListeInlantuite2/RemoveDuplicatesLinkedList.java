@@ -73,5 +73,27 @@ public class RemoveDuplicatesLinkedList {
         }
         return list;
     }
+
+    public static LinkedList<Integer> removeDuplicates3(LinkedList<Integer> list) { //cristi
+        ListIterator<Integer> it = list.listIterator();
+
+        while (it.hasNext()) {
+            int value = it.next();
+            // salvez valoarea curenta
+            if (it.hasNext()) {
+            /*
+            daca exista un element urmator
+                verific daca valoarea elementului urmator este egala cu valoarea curenta
+                daca este indeplinita conditia de mai sus -> sterg elementul
+             */
+                while(it.hasNext() && it.next() == value) {
+                    it.remove();
+                }
+                // dupa ce am sters toate elementele consecutive egale, merg un pas "inapoi"
+                it.previous();
+            }
+        }
+        return list;
+    }
 }
 

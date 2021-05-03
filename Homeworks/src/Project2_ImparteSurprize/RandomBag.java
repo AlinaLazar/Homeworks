@@ -15,7 +15,7 @@ public class RandomBag extends Bag{
         if (super.bag.size() == 0){
             System.out.println("There are no surprises in this bag!");
         }
-        int index = rnd.nextInt(super.bag.size() - 1);
+        int index = rnd.nextInt(super.bag.size());
         ISurprise returnedSurprise = super.bag.get(index);
         super.bag.remove(index);
         return returnedSurprise;

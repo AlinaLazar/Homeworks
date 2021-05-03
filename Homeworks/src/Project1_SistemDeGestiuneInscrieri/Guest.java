@@ -77,6 +77,7 @@ public class Guest {
         return false;
     }
 
+    @Override
     public String toString(){
         return lastName + " " + firstName + " " + email + " " + phoneNo ;
     }

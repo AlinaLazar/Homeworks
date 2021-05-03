@@ -45,13 +45,23 @@ public class Main {
         System.out.println(randomBag.size());
         System.out.println(randomBag.getBagArray());
 
-        BagFactory factory = new BagFactory();
-        factory.makeBag("random");
+//        BagFactory factory = new BagFactory();
+//        factory.makeBag("random");
 
-        GiveSurpriseAndApplause surprise1 = new GiveSurpriseAndApplause("lifo", 30);
+        AbstractGiveSurprise surprise1 = new GiveSurpriseAndApplause("lifo", 30);
+        AbstractGiveSurprise surprise2 = new GiveSurpriseAndHug("fifo", 20);
+        AbstractGiveSurprise surprise3 = new GiveSurpriseAndSing("random", 10);
         surprise1.put(cookie);
         surprise1.give();
         surprise1.giveWithPassion();
+
+        surprise2.put(candy);
+        surprise2.give();
+        surprise2.giveWithPassion();
+
+        surprise3.put(minionToy);
+        surprise3.give();
+        surprise3.giveWithPassion();
 
     }
 }
